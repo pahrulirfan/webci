@@ -4,6 +4,6 @@
 	<title>Tampil</title>
 </head>
 <body>
-	<h1>Belajar</h1>
+	<h2>dari controller home</h2>
 </body>
 </html>
