@@ -12,6 +12,7 @@ class Home extends CI_Controller {
         return $this->load->view('v_tampil');
     }
 
+	// keterangan form
 	public function form()
 	{
 		echo 'Form input';
