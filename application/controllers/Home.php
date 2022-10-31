@@ -15,7 +15,7 @@ class Home extends CI_Controller {
 	// keterangan form
 	public function form()
 	{
-		echo 'Form input';
+		return $this->load->view('v_form');
 	}
 
 }
