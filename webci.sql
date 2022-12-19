@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 14, 2022 at 05:05 PM
+-- Generation Time: Dec 19, 2022 at 02:54 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.9
 
@@ -45,6 +45,29 @@ INSERT INTO `tabel_aset` (`id`, `nama_aset`, `jenis`, `lokasi`, `jumlah`) VALUES
 (2, 'Meja Lipat', 'meja', 'BPM', 2),
 (3, 'Kursi Busa', 'Kursi', 'LPPM', 8);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table_c`
+--
+
+CREATE TABLE `table_c` (
+  `id_043` int(11) NOT NULL,
+  `kolom_jurusan` varchar(50) NOT NULL,
+  `kolom_kelas` varchar(10) NOT NULL,
+  `kolom_isi` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `table_c`
+--
+
+INSERT INTO `table_c` (`id_043`, `kolom_jurusan`, `kolom_kelas`, `kolom_isi`) VALUES
+(1, 'D3RPL', 'A', '20'),
+(2, 'D3SI', 'B', '20'),
+(3, 'Quod aliquid ut cill', 'Exercitati', '12'),
+(4, 'Ratione velit nostr', 'Aliqua Mol', '1');
+
 --
 -- Indexes for dumped tables
 --
@@ -56,6 +79,12 @@ ALTER TABLE `tabel_aset`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `table_c`
+--
+ALTER TABLE `table_c`
+  ADD PRIMARY KEY (`id_043`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -64,6 +93,12 @@ ALTER TABLE `tabel_aset`
 --
 ALTER TABLE `tabel_aset`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `table_c`
+--
+ALTER TABLE `table_c`
+  MODIFY `id_043` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
