@@ -6,4 +6,9 @@ class AsetModel extends CI_Model
 	{
 		return $this->db->get('tabel_aset')->result();
 	}
+
+	public function simpan_data($data)
+	{
+		$this->db->insert('tabel_aset', $data);
+	}
 }

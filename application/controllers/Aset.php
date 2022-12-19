@@ -20,4 +20,16 @@ class Aset extends CI_Controller
 	{
 		return $this->load->view('aset/v_tambah');
 	}
+
+	public function simpanTambah()
+	{
+		$data = array(
+			'nama_aset' => $this->input->post('txt_nama'),
+			'jenis' => $this->input->post('txt_jenis'),
+			'lokasi' => $this->input->post('txt_lokasi'),
+			'jumlah' => $this->input->post('txt_jumlah')
+		);
+		$this->AsetModel->simpan_data($data);
+		return redirect('aset/index');
+	}
 }
