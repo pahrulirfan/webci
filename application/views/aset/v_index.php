@@ -41,7 +41,7 @@
 
 							<a href="<?= site_url('aset/edit/' . $row->id) ?>" class="btn btn-warning">Edit</a>
 
-							<a href="<?= site_url('aset/delete/' . $row->id) ?>" class="btn btn-danger">Delete</a>
+							<a onclick="return confirm('Anda Yakin ?')" href="<?= site_url('aset/delete/' . $row->id) ?>" class="btn btn-danger">Delete</a>
 
 						</td>
 					</tr>
